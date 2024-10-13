@@ -1,0 +1,8 @@
+services:
+  postgres:
+    image: postgres:14.3-alpine
+    environment:
+      POSTGRES_DB: coc_management
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
